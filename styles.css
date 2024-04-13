@@ -25,7 +25,6 @@ nav .container-logo {
     display: flex;
 }
 
-
 .container-navigation .linksNavig li{
     list-style: none;
 }
@@ -51,14 +50,14 @@ nav .container-logo {
     transition: width 0.3s ease; 
 }
 
-.linkText:hover::before { /* Adjust the width on hover */
+.linkText:hover::before { 
     width: 100%;
     color: #FFFFFF;
 }
 
 .linkText:hover{
     color: #FFFFFF;
-    font-weight: bolder;
+
 }
 
 .selected {
@@ -113,7 +112,7 @@ div {
 
 #picID {
     width: 100%; 
-    height: auto; 
+ 
 }
 
 .containerAbout {
@@ -129,25 +128,37 @@ div {
     margin: 4% 15% 0 4%;
 }
 
+.whitespace{
+    flex-grow: 1;
+}
+
 .containerAboutSocials {
     width: 100%;
     height: auto;
     background: #324E7B;
     display: flex;
-    justify-content: space-between;
+
+    justify-content: space-between; 
 }
 
 .listSocials{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    justify-content: space-between;
 }
 
 .iconsSocials {
-    margin-right: 20%;
+    margin-right: 13%;
     transition: all 0.3s ease;
-    white-space: nowrap;
-    overflow: hidden; 
+    align-items: center;
+    align-self: center;
+    overflow: hidden;
+}
+
+.iconsSocials:hover {
+    filter: opacity(50%); 
 }
 
 .centered {
@@ -241,25 +252,21 @@ p {
     background-color: #324E7B;
     width: 100%;
     height: 10%;
-}
 
+}
 
 .containerLogo {
     width: 15%;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-
 }
-
 
 .picLogo {
     height: 77%;
     width: 77%;
-
 }
-
 
 .containerCard {
     margin: 1% auto;
@@ -268,7 +275,7 @@ p {
 }
 
 .bottomSpace {
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 
 .containerEducDetails {
@@ -277,14 +284,13 @@ p {
 }
 
 .marginTop {
-    margin-top: 7%;
+    margin-top: 7px;
 }
 
 .marginNone {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 
 .marginNoneBottom {
     margin-bottom: 5px;
