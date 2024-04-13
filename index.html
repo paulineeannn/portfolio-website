@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta name="description" content="Computer Science Student Portfolio">
     <meta name="description" content="portfolio">
+    <meta name="author" content="Pauline Ann P. Bautista">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=League+Spartan:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Pauline Ann's Portfolio</title>
 </head>
-<body>
-<nav>
-  <div class="container-navigation">
-    <div class="container-logo">
-      <h1>PaulineAnn</h1>
+
+    <body>
+
+    <nav>
+    <div class="container-navigation">
+        <div class="container-logo">
+        <a class="webname" href="#about">PaulineAnn</a>
+        </div>
+
+        <ul class="linksNavig">
+        <li><a class="linkText selected" href="#about">About me</a></li>
+        <li><a class="linkText" href="#skills">Skills</a></li>
+        <li><a class="linkText" href="#education">Education</a></li>
+        <li><a class="linkText" href="#experience">Experience</a></li>
+        </ul>
+        
     </div>
+    </nav>
 
-    <ul class="linksNavig">
-      <li><a class="linkText selected" href="#about">About me</a></li>
-      <li><a class="linkText" href="#skills">Skills</a></li>
-      <li><a class="linkText" href="#education">Education</a></li>
-      <li><a class="linkText" href="#experience">Experience</a></li>
-    </ul>
-    
-  </div>
-</nav>
-
-    <div  class="containerAboutMe bottomSpace" id="about">
+    <div  class="containerAboutMe topSpace" id="about">
         <div class="containerPicture">
-            <img id="picID" src="assets/id-pic.png">
+            <img id="picID" src="assets/picture.png" alt="my ID picture">
         </div>
 
         <div class="containerAbout">
@@ -93,8 +95,8 @@
     </div>
 
 
-    <h2 class="headingPage centered black darkblue marginNoneBottom" id="skills">Technical Skills</h2>
-    <div class="mainContainer bottomSpace" id="containerSkills">
+    <h2 class="headingPage centered black darkblue marginNoneBottom topSpace" id="skills">Technical Skills</h2>
+    <div class="mainContainer" id="containerSkills">
         <div class="containerSkillsBar">
             <h3 class="heading1 centered marginMedium blue">Programming</h3>
 
@@ -147,11 +149,11 @@
 
     </div>
 
-    <h2 class="headingPage centered black marginNoneBottom darkblue" id="education">Educational Background</h2>
-   
+    <h2 class="headingPage centered black marginNoneBottom darkblue topSpace" id="education">Educational Background</h2>
+
     <div class="containerCard flex">
         <div class="containerLogo">
-            <img class="picLogo" src="assets/logo-pup.png">
+            <img class="picLogo" src="assets/logo-pup.png" alt="Polytechnic University of the Philippines Logo">
         </div>
         <div class="containerEducDetails">
             <h3 class="heading1 marginNoneBottom darkblue">Bachelor of Science in Computer Science</h3>
@@ -173,7 +175,7 @@
         </div>
     </div>   
 
-    <div class="containerCard flex bottomSpace">
+    <div class="containerCard flex ">
         <div class="containerLogo">
             <img class="picLogo" src="assets/logo-sacs.png">
         </div>
@@ -188,7 +190,7 @@
 
     </div>
 
-    <h2 class="headingPage centered black marginNoneBottom darkblue" id="experience">Relevant Experience</h2>
+    <h2 class="headingPage centered black marginNoneBottom darkblue topSpace" id="experience">Relevant Experience</h2>
     <div class="containerCard">
         <div class="containerExperience">
             <h3 class="heading1 marginNoneBottom darkblue">Member of the Media Production Group</h2>
@@ -215,6 +217,10 @@
             <ul  class="list-bulleted marginMedium"><li>Transfers handwritten data from the nutrition office into computer files using Microsoft Excel</li></ul>
         </div>
     </div>
+
+    <footer>
+        <p class="footerText">Copyright ©2024   |   Created by: Pauline Ann Bautista</p>
+    </footer>
 
 </body>
 <script src="script.js"></script>

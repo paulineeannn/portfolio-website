@@ -5,6 +5,7 @@ nav{
     left: 0;
     width: 100%;
     transition: all 0.4s ease;
+    z-index: 100;
 }
 
 
@@ -74,17 +75,27 @@ nav.sticky {
     z-index: 10;
 }
 
+.topSpace {
+    padding-top: 10%;
+    background-color: #E5EEFF;
+    margin-top: 0;
+}
 
-h1 {
+.webname {
     color: #FFFFFF;
     font-size: xx-large;
     font-family: "Roboto", sans-serif;
     margin-left: 20%;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.webname:hover{
+    filter:opacity(50%);
 }
 
 body {
     background-color: #E5EEFF;
-    padding-top: 130px
 }
 
 div {
@@ -108,16 +119,22 @@ div {
     width: 35%;
     background: #FFFFFF;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 #picID {
-    width: 100%; 
- 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: top;
+    margin: 0;
+    padding: 0; 
 }
 
 .containerAbout {
     width: 65%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
@@ -137,7 +154,6 @@ div {
     height: auto;
     background: #324E7B;
     display: flex;
-
     justify-content: space-between; 
 }
 
@@ -168,6 +184,8 @@ div {
 p {
     font-size: large;
     color: #5068A9;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 400;
 }
 
 .heading1 {
@@ -266,6 +284,7 @@ p {
 .picLogo {
     height: 77%;
     width: 77%;
+    object-fit: contain;
 }
 
 .containerCard {
@@ -275,7 +294,7 @@ p {
 }
 
 .bottomSpace {
-    margin-bottom: 7%;
+    margin-bottom: 10%;
 }
 
 .containerEducDetails {
@@ -399,3 +418,18 @@ ul {
     color: #5068A9;
 }
 
+footer {
+    background-color: #324E7B;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footerText {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: small;
+    padding: 2% 0;
+
+}
