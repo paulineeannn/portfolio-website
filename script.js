@@ -2,12 +2,10 @@ let nav = document.querySelector("nav");
 window.addEventListener("scroll", function() {
   if (window.scrollY > 20) {
     nav.classList.add("sticky");
-    console.log("tester3")
   } else {
     nav.classList.remove("sticky");
   }
 });
-
 
 let navLinks = document.querySelectorAll('.linksNavig a');
 
@@ -40,5 +38,14 @@ window.addEventListener('scroll', function() {
   updateNavigation();
 });
 
-
-updateNavigation();
+navLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    let targetId = this.getAttribute('href').substring(1);
+    let targetElement = document.getElementById(targetId);
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth' 
+    });
+  });
+});
