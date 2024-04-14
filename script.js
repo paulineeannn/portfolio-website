@@ -1,51 +1,50 @@
-let nav = document.querySelector("nav");
+// Sticky navigation bar
+const nav = document.querySelector("nav");
 window.addEventListener("scroll", function() {
   if (window.scrollY > 20) {
     nav.classList.add("sticky");
-  } else {
+  } 
+  else {
     nav.classList.remove("sticky");
   }
 });
 
-let navLinks = document.querySelectorAll('.linksNavig a');
-
-function getOffsets() {
-  let offsets = [];
-  navLinks.forEach(function(link) {
-    let targetId = link.getAttribute('href').substring(1);
-    let targetElement = document.getElementById(targetId);
-    let offset = targetElement.offsetTop;
-    offsets.push(offset);
-  });
-  return offsets;
-}
-
 function updateNavigation() {
-  let offsets = getOffsets();
-  let scrollPosition = window.scrollY;
+  // get position of each section and store in an array
+  const positions = [];
+  document.querySelectorAll('.linksNavig a').forEach(function(link) {
+    const targetId = link.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    positions.push(targetElement.offsetTop);
+  });
 
-  offsets.forEach(function(offset, index) {
-    if (scrollPosition >= offset) {
-      navLinks.forEach(function(link) {
+  const scrollPosition = window.scrollY+100;
+
+  positions.forEach(function(positions, index) {
+    const link = document.querySelectorAll('.linksNavig a')[index];
+    if (scrollPosition >= positions) {
+      document.querySelectorAll('.linksNavig a').forEach(function(link) {
         link.classList.remove('selected');
       });
-      navLinks[index].classList.add('selected');
+      link.classList.add('selected');
     }
   });
 }
 
-window.addEventListener('scroll', function() {
-  updateNavigation();
-});
-
-navLinks.forEach(function(link) {
+// Add click event listener to smoothly scroll to target section
+document.querySelectorAll('.linksNavig a').forEach(function(link) {
   link.addEventListener('click', function(event) {
     event.preventDefault();
-    let targetId = this.getAttribute('href').substring(1);
-    let targetElement = document.getElementById(targetId);
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
     window.scrollTo({
       top: targetElement.offsetTop,
-      behavior: 'smooth' 
+      behavior: 'smooth'
     });
   });
+});
+
+
+window.addEventListener('scroll', function() {
+  updateNavigation();
 });
