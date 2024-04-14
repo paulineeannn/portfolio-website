@@ -31,7 +31,7 @@ function updateNavigation() {
   });
 }
 
-// Add click event listener to smoothly scroll to target section
+// scroll to target section
 document.querySelectorAll('.linksNavig a').forEach(function(link) {
   link.addEventListener('click', function(event) {
     event.preventDefault();
