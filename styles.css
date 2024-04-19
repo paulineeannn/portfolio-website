@@ -314,6 +314,10 @@ p {
     margin-bottom: 10px;
 }
 
+.award {
+    font-size: medium;
+}
+
 #about {
     display: flex;
     height: fit-content;
@@ -409,6 +413,7 @@ p {
 
 .month {
     width: 220px;
+    font-size: medium;
 }
 
 
