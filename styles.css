@@ -95,8 +95,11 @@ nav.sticky {
     filter:opacity(50%);
 }
 
-body {
+body, .container-content {
     background-color: #E5EEFF;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 div {
@@ -496,6 +499,39 @@ footer {
     font-family: "Roboto", sans-serif;
     color: #FFFFFF;
     text-align: center;
-    font-size: small;
-    padding: 2% 0;
+    font-size: 1.1vw;
+    padding: 1% 0;
 }
+
+#responsiveness-alert {
+    position: fixed; 
+    top: 35%; 
+    left: 22%;
+    width: 50%;
+    background-color: #1B2C47;
+    z-index: 100; 
+    text-align: center;
+    padding: 2%;
+    border-radius: 15px;
+    
+  }
+  
+  #close-alert {
+    background-color: #5068A9;
+    border: none;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 5px;
+    color: #1B2C47;
+  }
+
+  #close-alert:hover {
+    background-color: #324E7B;
+    color: #1B2C47;
+  }
+
+  #alert-text {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;;
+  }

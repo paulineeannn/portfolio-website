@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <div id="responsiveness-alert">
+        <p id="alert-text"><b>Heads up!</b> This is my very first website built entirely from scratch. While I'm still working on making it responsive for all devices, it currently works best on desktops.  I'm working on making it fully responsive soon! Thanks for your patience!</p>
+        <button id="close-alert">Got it!</button>
+    </div>
 
     <nav>
     <!-- sticky navigation bar -->
@@ -36,314 +40,315 @@
         
     </div>
     </nav>
+    <div class="container-content">
+        <div  class="containerAboutMe topSpace" id="about">
+            <div class="containerPicture">
+                <img id="picID" src="assets/picture.png" alt="my ID picture">
+            </div>
 
-    <!-- about me page -->
-    <div  class="containerAboutMe topSpace" id="about">
-        <div class="containerPicture">
-            <img id="picID" src="assets/picture.png" alt="my ID picture">
+            <div class="containerAbout">
+                <div class="containerAboutDetails">
+                    <h2 class="titlePage black marginNone">Pauline Ann P. Bautista</h2>
+                    <h3 class="heading1 marginNone blue">3rd Year Computer Science Student</h3> 
+                    <p class="marginNone">I have a passion for design and a strong desire to become a front-end developer. I enjoy merging creativity with programming to develop not only functional but also visually appealing applications to bring satisfaction to users.</p>
+                    <hr class="marginTop">
+                </div>
+
+                <div class="containerDetails">
+                    <table class="tableDetails">
+                        <tr>
+                            <td class="info-title">Age</td>
+                            <td class="info-colon">:</td>
+                            <td class="info-answer">21 years old</td>
+                        </tr>
+                        <tr>
+                            <td class="info-title">Nationality</td>
+                            <td class="info-colon">:</td>
+                            <td class="info-answer">Filipino</td>
+                        </tr>
+                        <tr>
+                            <td class="info-title">Address</td>
+                            <td class="info-colon">:</td>
+                            <td class="info-answer">Hagonoy, Bulacan</td>
+                        </tr>
+                        <tr>
+                            <td class="info-title">Email</td>
+                            <td class="info-colon">:</td>
+                            <td class="info-answer">paulineannbautista@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td class="info-title">Phone Number</td>
+                            <td class="info-colon">:</td>
+                            <td class="info-answer">09394170687</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="whitespace">
+
+                </div>
+
+                <div class="containerAboutSocials">
+                    <ul class="listSocials list-no-bullet">
+                        <li class="iconsSocials"><a href="mailto:paulineannbautista@gmail.com"><img class="svg" src="assets/email.svg"></a></li>
+                        <li class="iconsSocials"><a href="https://www.facebook.com/profile.php?id=100002254697629" target="_blank"><img class="svg" src="assets/facebook.svg"></a></li>
+                        <li class="iconsSocials"><a href="https://github.com/paulineeannn/" target="_blank"><img class="svg" src="assets/github.svg"></a></li>
+                        <li class="iconsSocials"><a href="https://linkedin.com/in/pauline-ann-bautista/" target="_blank"><img class="svg" src="assets/linkedin.svg"></a></li>
+                        <li class="iconsSocials"><a href="https://qaibahomestest.my.canva.site/pauline-editing-portfolio" target="_blank"><img class="svg" src="assets/portfolio.svg"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="containerAbout">
-            <div class="containerAboutDetails">
-                <h2 class="titlePage black marginNone">Pauline Ann P. Bautista</h2>
-                <h3 class="heading1 marginNone blue">3rd Year Computer Science Student</h3> 
-                <p class="marginNone">I have a passion for design and a strong desire to become a front-end developer. I enjoy merging creativity with programming to develop not only functional but also visually appealing applications to bring satisfaction to users.</p>
-                <hr class="marginTop">
+        <!-- skills page -->
+        <h2 class="titlePage centered black darkblue marginNoneBottom topSpace" id="skills">Technical Skills</h2>
+        <div class="mainContainer" id="containerSkills">
+            <div class="containerSkillsBar">
+                <h3 class="heading1 centered marginMedium blue">Programming</h3>
+
+                <p class="headingSkills" >Python</p>
+                <div class="outerBar">
+                    <div class="innerBar progress80"><p class="progress">80%</p></div>
+                </div>
+
+                <p class="headingSkills">C</p>
+                <div class="outerBar">
+                    <div class="innerBar progress40"><p class="progress">40%</p></div>
+                </div>
+
+                <p class="headingSkills">Java</p>
+                <div class="outerBar">
+                    <div class="innerBar progress60"><p class="progress">60%</p></div>
+                </div>
+
+                <p class="headingSkills">MySQL</p>
+                <div class="outerBar">
+                    <div class="innerBar progress60"><p class="progress">60%</p></div>
+                </div>
+
+                <p class="headingSkills">HTML & CSS</p>
+                <div class="outerBar">
+                    <div class="innerBar progress60"><p class="progress">60%</p></div>
+                </div>
+                
             </div>
 
-            <div class="containerDetails">
-                <table class="tableDetails">
-                    <tr>
-                        <td class="info-title">Age</td>
-                        <td class="info-colon">:</td>
-                        <td class="info-answer">21 years old</td>
-                    </tr>
-                    <tr>
-                        <td class="info-title">Nationality</td>
-                        <td class="info-colon">:</td>
-                        <td class="info-answer">Filipino</td>
-                    </tr>
-                    <tr>
-                        <td class="info-title">Address</td>
-                        <td class="info-colon">:</td>
-                        <td class="info-answer">Hagonoy, Bulacan</td>
-                    </tr>
-                    <tr>
-                        <td class="info-title">Email</td>
-                        <td class="info-colon">:</td>
-                        <td class="info-answer">paulineannbautista@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td class="info-title">Phone Number</td>
-                        <td class="info-colon">:</td>
-                        <td class="info-answer">09394170687</td>
-                    </tr>
-                </table>
+            <div class="containerSkillsBar">
+                <h3 class="heading1 centered marginMedium blue">Designing</h3>
+
+                <p class="headingSkills">Adobe Photoshop</p>
+                <div class="outerBar">
+                    <div class="innerBar progress80"><p class="progress">80%</p></div>
+                </div>
+
+                <p class="headingSkills">Adobe Premiere Pro</p>
+                <div class="outerBar">
+                    <div class="innerBar progress60"><p class="progress">60%</p></div>
+                </div>
+
+                <p class="headingSkills">Figma</p>
+                <div class="outerBar">
+                    <div class="innerBar progress70"><p class="progress">70%</p></div>
+                </div>
+
+                <p class="headingSkills">Canva</p>
+                <div class="outerBar">
+                    <div class="innerBar progress70"><p class="progress">70%</p></div>
+                </div>
+
+                <p class="headingSkills">Filmora</p>
+                <div class="outerBar">
+                    <div class="innerBar progress60"><p class="progress">60%</p></div>
+                </div>
+                
+                
             </div>
 
-            <div class="whitespace">
-
-            </div>
-
-            <div class="containerAboutSocials">
-                <ul class="listSocials list-no-bullet">
-                    <li class="iconsSocials"><a href="mailto:paulineannbautista@gmail.com"><img class="svg" src="assets/email.svg"></a></li>
-                    <li class="iconsSocials"><a href="https://www.facebook.com/profile.php?id=100002254697629" target="_blank"><img class="svg" src="assets/facebook.svg"></a></li>
-                    <li class="iconsSocials"><a href="https://github.com/paulineeannn/" target="_blank"><img class="svg" src="assets/github.svg"></a></li>
-                    <li class="iconsSocials"><a href="https://linkedin.com/in/pauline-ann-bautista/" target="_blank"><img class="svg" src="assets/linkedin.svg"></a></li>
-                    <li class="iconsSocials"><a href="https://qaibahomestest.my.canva.site/pauline-editing-portfolio" target="_blank"><img class="svg" src="assets/portfolio.svg"></a></li>
-                </ul>
-            </div>
         </div>
-    </div>
 
-    <!-- skills page -->
-    <h2 class="titlePage centered black darkblue marginNoneBottom topSpace" id="skills">Technical Skills</h2>
-    <div class="mainContainer" id="containerSkills">
-        <div class="containerSkillsBar">
-            <h3 class="heading1 centered marginMedium blue">Programming</h3>
-
-            <p class="headingSkills" >Python</p>
-            <div class="outerBar">
-                <div class="innerBar progress80"><p class="progress">80%</p></div>
+        <!-- education page -->
+        <h2 class="titlePage centered black marginNoneBottom darkblue topSpace" id="education">Educational Background</h2>
+        <div class="containerCard flex">
+            <div class="containerLogo">
+                <img class="picLogo" src="assets/logo-pup.png" alt="Polytechnic University of the Philippines Logo">
             </div>
-
-            <p class="headingSkills">C</p>
-            <div class="outerBar">
-                <div class="innerBar progress40"><p class="progress">40%</p></div>
+            <div class="containerEducDetails">
+                <h3 class="heading1 marginNoneBottom darkblue">Bachelor of Science in Computer Science</h3>
+                <h4 class="heading2 marginNone blue">Polytechnic University of the Philippines</h4>
+                <h5 class="month solidBg marginNone">2021 - present</h5>
+                <p class="marginMedium marginBottomElement award">Awarded <b>President's Lister</b> for academic achievement and recipient of the <b>Department of Science and Technology (DOST) Scholarship</b> and gained practical experience by developing Python and Java applications.</p>
             </div>
-
-            <p class="headingSkills">Java</p>
-            <div class="outerBar">
-                <div class="innerBar progress60"><p class="progress">60%</p></div>
-            </div>
-
-            <p class="headingSkills">MySQL</p>
-            <div class="outerBar">
-                <div class="innerBar progress60"><p class="progress">60%</p></div>
-            </div>
-
-            <p class="headingSkills">HTML & CSS</p>
-            <div class="outerBar">
-                <div class="innerBar progress60"><p class="progress">60%</p></div>
-            </div>
+        </div>  
             
-        </div>
-
-        <div class="containerSkillsBar">
-            <h3 class="heading1 centered marginMedium blue">Designing</h3>
-
-            <p class="headingSkills">Adobe Photoshop</p>
-            <div class="outerBar">
-                <div class="innerBar progress80"><p class="progress">80%</p></div>
+        <div class="containerCard flex">
+            <div class="containerLogo">
+                <img class="picLogo" src="assets/logo-marcelo.png">
             </div>
-
-            <p class="headingSkills">Adobe Premiere Pro</p>
-            <div class="outerBar">
-                <div class="innerBar progress60"><p class="progress">60%</p></div>
+            <div class="containerEducDetails">
+                <h3 class="heading1 marginNoneBottom darkblue">Science, Technology, Engineering, and Mathematics</h3>
+                <h4 class="heading2 marginNone blue">Marcelo H. del Pilar National High School</h4>
+                <h5 class="year solidBg marginNone">2019 - 2021</h5>
+                <p class="marginMedium marginBottomElement award">Earned <b></b>consistent academic honors</b> (With High Honor in 2021 and With Honor from 2019-2021) and <b>led a capstone project</b> about an Arduino-based physical distancing detector.</p>    
             </div>
+        </div>   
 
-            <p class="headingSkills">Figma</p>
-            <div class="outerBar">
-                <div class="innerBar progress70"><p class="progress">70%</p></div>
+        <div class="containerCard flex ">
+            <div class="containerLogo">
+                <img class="picLogo" src="assets/logo-sacs.png">
             </div>
-
-            <p class="headingSkills">Canva</p>
-            <div class="outerBar">
-                <div class="innerBar progress70"><p class="progress">70%</p></div>
+            <div class="containerEducDetails">
+                <h3 class="heading1 marginNoneBottom darkblue">Junior High School</h3>
+                <h4 class="heading2 marginNone marginNone blue">St. Anne's Catholic School</h4>
+                <h5 class="year solidBg marginNone">2015 - 2019</h5>
+                <p class="marginMedium award">Consistently recognized with <b>High Honors</b> and developed a <b>foundation in HTML and CSS fundamentals</b> through computer subject class.</p>
             </div>
+        </div>  
 
-            <p class="headingSkills">Filmora</p>
-            <div class="outerBar">
-                <div class="innerBar progress60"><p class="progress">60%</p></div>
+
+
+
+        <!-- experience page -->
+        <h2 class="titlePage centered black marginNoneBottom darkblue topSpace" id="experience">Relevant Experience</h2>
+        <div class="containerCard">
+            <div class="containerExperience">
+                <h3 class="heading1 marginNoneBottom">Member of the Media Production Group</h2>
+                <h4 class="heading2 marginNone blue">Media Committee of PUP The Programmers' Guild (PUP TPG)</h3>
+                <h5 class="month solidBg marginMedium">January 2024 - present</h4>
+                <ul  class="list-bulleted marginMedium"><li>Assists in the production of publication materials of the organization </li></ul>
             </div>
-            
-            
-        </div>
+        </div>  
 
-    </div>
-
-    <!-- education page -->
-    <h2 class="titlePage centered black marginNoneBottom darkblue topSpace" id="education">Educational Background</h2>
-    <div class="containerCard flex">
-        <div class="containerLogo">
-            <img class="picLogo" src="assets/logo-pup.png" alt="Polytechnic University of the Philippines Logo">
-        </div>
-        <div class="containerEducDetails">
-            <h3 class="heading1 marginNoneBottom darkblue">Bachelor of Science in Computer Science</h3>
-            <h4 class="heading2 marginNone blue">Polytechnic University of the Philippines</h4>
-            <h5 class="month solidBg marginNone">2021 - present</h5>
-            <p class="marginMedium marginBottomElement award">Awarded <b>President's Lister</b> for academic achievement and recipient of the <b>Department of Science and Technology (DOST) Scholarship</b> and gained practical experience by developing Python and Java applications.</p>
-        </div>
-    </div>  
+        <div class="containerCard">
+            <div class="containerExperience">
+                <h3 class="heading1 marginNoneBottom darkblue">Subcommittee Member for Documentations</h2>
+                <h4 class="heading2 marginNone blue">PUP Association of Students for Computer Intelligence Integration (PUP ASCII)</h3>
+                <h5 class="month solidBg marginMedium">October 2021 - July 2022</h4>
+                <ul  class="list-bulleted marginMedium"><li>Develops and compiles a record of the activities done by the academic organization</li></ul>
+            </div>
+        </div>  
         
-    <div class="containerCard flex">
-        <div class="containerLogo">
-            <img class="picLogo" src="assets/logo-marcelo.png">
+        <div class="containerCard">
+            <div class="containerExperience">
+                <h3 class="heading1 marginNoneBottom">Special Program for Employment of Students</h2>
+                <h4 class="heading2 marginNone blue">Public Employment Service Office of Municipality of Hagonoy, Bulacan</h3>
+                <h5 class="month solidBg marginMedium">April 2019 – May 2019</h4>
+                <ul  class="list-bulleted marginMedium"><li>Transfers handwritten data from the nutrition office into computer files using Microsoft Excel</li></ul>
+            </div>
         </div>
-        <div class="containerEducDetails">
-            <h3 class="heading1 marginNoneBottom darkblue">Science, Technology, Engineering, and Mathematics</h3>
-            <h4 class="heading2 marginNone blue">Marcelo H. del Pilar National High School</h4>
-            <h5 class="year solidBg marginNone">2019 - 2021</h5>
-            <p class="marginMedium marginBottomElement award">Earned <b></b>consistent academic honors</b> (With High Honor in 2021 and With Honor from 2019-2021) and <b>led a capstone project</b> about an Arduino-based physical distancing detector.</p>    
-        </div>
-    </div>   
 
-    <div class="containerCard flex ">
-        <div class="containerLogo">
-            <img class="picLogo" src="assets/logo-sacs.png">
-        </div>
-        <div class="containerEducDetails">
-            <h3 class="heading1 marginNoneBottom darkblue">Junior High School</h3>
-            <h4 class="heading2 marginNone marginNone blue">St. Anne's Catholic School</h4>
-            <h5 class="year solidBg marginNone">2015 - 2019</h5>
-            <p class="marginMedium award">Consistently recognized with <b>High Honors</b> and developed a <b>foundation in HTML and CSS fundamentals</b> through computer subject class.</p>
-        </div>
-    </div>  
 
+        <!-- portfolio page -->
+        <h2 class="titlePage centered black marginNoneBottom darkblue topSpace" id="portfolio">Programming Projects</h2>
+
+        <div class="containerPortfolio flex">
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/1kjfJMzsdo_Uajn6SuVege8YLkQU3BJBO/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/1.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">PUPFinds</h2>
+                <p class="description">An Android app for the PUP Community's lost and found needs, developed with Tricia Rivera.</p>
+                <div class="containerTags">
+                    <p>Java</p>
+                    <p>Android Studio</p>
+                    <p>XML</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://github.com/paulineeannn/FirstByte" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/2.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">FirstByte</h2>
+                <p class="description">A lexical and syntax analyzer for a programming language created for novice programmers. Developed with Lord Uy and Ashley Jugueta.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>customtkinter</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://github.com/paulineeannn/ADET-SIS" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/3.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">PUP SIS</h2>
+                <p class="description">A straightforward student information system showcasing CRUD operations.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>Tkinter</p>
+                    <p>SQLite</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/1Cd7X4jJluUTtj16eCEDwUovUI-8JummV/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/4.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">E-Hambing </h2>
+                <p class="description">A Document Comparison Application using the Boyer-Moore String Matching Algorithm.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>Tkinter</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/13jo-e-rwV79MLxAiuVUaAEWFgNtvYiuv/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/5.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">Pantry Inventory System</h2>
+                <p class="description">A hotel pantry inventory system to demonstrade CRUD operations. It is a final requirement for the course Information Management</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>Tkinter</p>
+                    <p>MySQL</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/10Upof3LGtmRHOnnAzEVBXqPFLoF6r4zq/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/6.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">Home Away From Home</h2>
+                <p class="description">A hotel reservation system for the final requirement in the course Object Oriented Programming.</p>
+                <div class="containerTags">
+                    <p>Java</p>
+                    <p>Swing</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/1L8X0dhCYag_n1UDrclPD_0biybutRKea/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/7.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">PopulΔ</h2>
+                <p class="description">A predictor for the population of the Philippines. Developed with the help of Lord Uy.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>Tkinter</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/1lkgAbA8zYrgDcF3z80K1a-eWnIlgJ7Rb/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/8.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">Arithmetic Math Quiz</h2>
+                <p class="description">A personal project to practice Python Tkinter.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>Tkinter</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://drive.google.com/file/d/1WWkO95cDtGr4CYOpxzfnF_Fk3_tjdrMA/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/9.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">Tic Tac Toe</h2>
+                <p class="description">A personal project to practice Python Tkinter.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>Tkinter</p>
+                </div>
+            </div>
+
+            <div class="containerProject">
+                <a href="https://github.com/paulineeannn/Password-Generator-GUI" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/10.png"></a>
+                <h2 class="heading1 darkblue marginNone projectTitle">Password Generator</h2>
+                <p class="description">A personal project to practice Python Tkinter.</p>
+                <div class="containerTags">
+                    <p>Python</p>
+                    <p>customtkinter</p>
+                </div>
+            </div>
+
+
+        </div>
 
     </div>
 
-    <!-- experience page -->
-    <h2 class="titlePage centered black marginNoneBottom darkblue topSpace" id="experience">Relevant Experience</h2>
-    <div class="containerCard">
-        <div class="containerExperience">
-            <h3 class="heading1 marginNoneBottom">Member of the Media Production Group</h2>
-            <h4 class="heading2 marginNone blue">Media Committee of PUP The Programmers' Guild (PUP TPG)</h3>
-            <h5 class="month solidBg marginMedium">January 2024 - present</h4>
-            <ul  class="list-bulleted marginMedium"><li>Assists in the production of publication materials of the organization </li></ul>
-        </div>
-    </div>  
-
-    <div class="containerCard">
-        <div class="containerExperience">
-            <h3 class="heading1 marginNoneBottom darkblue">Subcommittee Member for Documentations</h2>
-            <h4 class="heading2 marginNone blue">PUP Association of Students for Computer Intelligence Integration (PUP ASCII)</h3>
-            <h5 class="month solidBg marginMedium">October 2021 - July 2022</h4>
-            <ul  class="list-bulleted marginMedium"><li>Develops and compiles a record of the activities done by the academic organization</li></ul>
-        </div>
-    </div>  
-    
-    <div class="containerCard">
-        <div class="containerExperience">
-            <h3 class="heading1 marginNoneBottom">Special Program for Employment of Students</h2>
-            <h4 class="heading2 marginNone blue">Public Employment Service Office of Municipality of Hagonoy, Bulacan</h3>
-            <h5 class="month solidBg marginMedium">April 2019 – May 2019</h4>
-            <ul  class="list-bulleted marginMedium"><li>Transfers handwritten data from the nutrition office into computer files using Microsoft Excel</li></ul>
-        </div>
-    </div>
-
-
-    <!-- portfolio page -->
-    <h2 class="titlePage centered black marginNoneBottom darkblue topSpace" id="portfolio">Programming Projects</h2>
-
-    <div class="containerPortfolio flex">
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/1kjfJMzsdo_Uajn6SuVege8YLkQU3BJBO/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/1.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">PUPFinds</h2>
-            <p class="description">An Android app for the PUP Community's lost and found needs, developed with Tricia Rivera.</p>
-            <div class="containerTags">
-                <p>Java</p>
-                <p>Android Studio</p>
-                <p>XML</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://github.com/paulineeannn/FirstByte" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/2.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">FirstByte</h2>
-            <p class="description">A lexical and syntax analyzer for a programming language created for novice programmers. Developed with Lord Uy and Ashley Jugueta.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>customtkinter</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://github.com/paulineeannn/ADET-SIS" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/3.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">PUP SIS</h2>
-            <p class="description">A straightforward student information system showcasing CRUD operations.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>Tkinter</p>
-                <p>SQLite</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/1Cd7X4jJluUTtj16eCEDwUovUI-8JummV/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/4.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">E-Hambing </h2>
-            <p class="description">A Document Comparison Application using the Boyer-Moore String Matching Algorithm.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>Tkinter</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/13jo-e-rwV79MLxAiuVUaAEWFgNtvYiuv/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/5.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">Pantry Inventory System</h2>
-            <p class="description">A hotel pantry inventory system to demonstrade CRUD operations. It is a final requirement for the course Information Management</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>Tkinter</p>
-                <p>MySQL</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/10Upof3LGtmRHOnnAzEVBXqPFLoF6r4zq/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/6.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">Home Away From Home</h2>
-            <p class="description">A hotel reservation system for the final requirement in the course Object Oriented Programming.</p>
-            <div class="containerTags">
-                <p>Java</p>
-                <p>Swing</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/1L8X0dhCYag_n1UDrclPD_0biybutRKea/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/7.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">PopulΔ</h2>
-            <p class="description">A predictor for the population of the Philippines. Developed with the help of Lord Uy.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>Tkinter</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/1lkgAbA8zYrgDcF3z80K1a-eWnIlgJ7Rb/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/8.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">Arithmetic Math Quiz</h2>
-            <p class="description">A personal project to practice Python Tkinter.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>Tkinter</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://drive.google.com/file/d/1WWkO95cDtGr4CYOpxzfnF_Fk3_tjdrMA/view?usp=sharing" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/9.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">Tic Tac Toe</h2>
-            <p class="description">A personal project to practice Python Tkinter.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>Tkinter</p>
-            </div>
-        </div>
-
-        <div class="containerProject">
-            <a href="https://github.com/paulineeannn/Password-Generator-GUI" target="_blank"><img class="projectPic marginNone" src="assets/portfolio/10.png"></a>
-            <h2 class="heading1 darkblue marginNone projectTitle">Password Generator</h2>
-            <p class="description">A personal project to practice Python Tkinter.</p>
-            <div class="containerTags">
-                <p>Python</p>
-                <p>customtkinter</p>
-            </div>
-        </div>
-
-
-
-    </div>
 
     <footer>
         <p class="footerText">Copyright ©2024   |   Created by: Pauline Ann Bautista</p>

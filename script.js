@@ -1,3 +1,11 @@
+// modal window
+const closeButton = document.getElementById("close-alert");
+const alertDiv = document.getElementById("responsiveness-alert");
+
+closeButton.addEventListener("click", function() {
+  alertDiv.style.display = "none";
+});
+
 // Sticky navigation bar
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", function() {
