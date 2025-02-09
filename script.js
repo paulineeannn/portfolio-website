@@ -1,6 +1,6 @@
 // modal window
 const closeButton = document.getElementById("close-alert");
-const alertDiv = document.getElementById("responsiveness-alert");
+const alertDiv = document.getElementById("alert-box");
 
 closeButton.addEventListener("click", function() {
   alertDiv.style.display = "none";
